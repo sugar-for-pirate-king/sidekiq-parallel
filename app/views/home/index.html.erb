@@ -1,0 +1,15 @@
+<p>hello</p>
+<%= link_to 'Trigger job', root_path %>
+<br><br><br>
+<table>
+  <tr>
+    <th>#id</th>
+    <th>created_at</th>
+  </tr>
+  <% @workers.each do |worker| %>
+    <tr>
+      <td><%= worker.id %></td>
+      <td><%= worker.created_at %></td>
+    </tr>
+  <% end %>
+</table>
